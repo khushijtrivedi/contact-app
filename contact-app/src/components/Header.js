@@ -2,11 +2,12 @@ import React from "react";
 
 const Header=()=>{
     return(
-    <div className="text-center">
-        <h1 className="display-1">
-            CONTACT MANAGER
-        </h1>
-        
+    <div className="ui fixed menu">
+        <div className="ui conatiner center">
+            <h2 style={{marginLeft:"600px"}}>
+                CONTACT MANAGER
+            </h2>
+        </div>
       </div>
     );
 };

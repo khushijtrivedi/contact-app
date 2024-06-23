@@ -24,36 +24,35 @@ class AddContact extends React.Component {
       return <Navigate to="/" replace={true} />;
     }
     return (
-      <div className="container text-center">
+      <div className="ui main">
+        <br>
+        </br>
+        <br></br><br></br>
         <h2>ADD CONTACT</h2>
-        <form className="row g-3" onSubmit={this.add}>
-          <div className="mb-3">
-            <label className="form-label">NAME</label>
+        <form className="ui form" onSubmit={this.add}>
+          <div className="field">
+            <label>NAME</label>
             <input
               type="text"
-              className="form-control"
               id="nameInput"
               placeholder="FirstName LastName"
               value={this.state.name}
               onChange={(e) => this.setState({ name: e.target.value })}
             />
           </div>
-          <div className="mb-3">
-            <label className="form-label">EMAIL</label>
+          <div className="field">
+            <label>EMAIL</label>
             <input
               type="email"
-              className="form-control"
               id="emailInput"
               placeholder="name@output.com"
               value={this.state.email}
               onChange={(e) => this.setState({ email: e.target.value })}
             />
           </div>
-          <div className="mb-3">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="ui button blue">
               ADD
             </button>
-          </div>
         </form>
       </div>
     );
